@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.fonfon.swipepanel.panel.InterceptPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/frame_top"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.fonfon.swipepanel.panel.DragLayout
+            android:id="@+id/dragview"
+            android:layout_marginTop="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.fonfon.swipepanel.panel.InterceptFrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.fonfon.swipepanel.panel.InterceptButton
+                    android:id="@+id/button"
+                    android:text="ТЫК"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_gravity="bottom"/>
+
+            </com.fonfon.swipepanel.panel.InterceptFrameLayout>
+
+            <FrameLayout
+                android:id="@+id/second_fragment_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.fonfon.swipepanel.panel.DragLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary"/>
+
+    </FrameLayout>
+
+</FrameLayout>
